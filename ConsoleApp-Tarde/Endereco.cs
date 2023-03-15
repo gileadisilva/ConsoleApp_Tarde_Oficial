@@ -25,6 +25,18 @@ namespace ConsoleApp_Tarde
             Cidade = cidade;
         }
 
+        public void AtualizarEndereco(string rua, string numero, string bairro)
+        {
+            setBairro(bairro);
+            setNumero(numero);
+            setRua(rua);
+
+        }
+
+        public string EnderecoCompleto()
+        {
+            return "Rua " + Rua + ", N° " + Numero + " Bairro " + Bairro + " Cidade " + Cidade;
+        }
         public int getId()
         {
             return Id;
